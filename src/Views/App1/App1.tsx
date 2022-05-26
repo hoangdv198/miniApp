@@ -6,14 +6,13 @@ import {
   TouchableOpacity,
   View,
   StyleSheet,
-  Dimensions,
   Pressable,
 } from 'react-native';
 import {styleBase} from '../../assets/styles';
 
 import Video from 'react-native-video';
 import {IVideo, videos} from './data';
-const {height, width} = Dimensions.get('screen');
+import {height} from '../../ultis/constan';
 
 const VIDEO_HEIGHT = height / 3.5;
 

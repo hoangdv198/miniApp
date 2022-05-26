@@ -5,6 +5,7 @@ import {Screens} from './ultis/types/Navigation';
 import MainScreen from './Views/MainScreen';
 import App1 from './Views/App1/App1';
 import App2 from './Views/App2/App2';
+import App3 from './Views/App3/App3';
 const Stack = createNativeStackNavigator();
 const NavigationApp: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const NavigationApp: React.FC = () => {
         <Stack.Screen name={Screens.Home} component={MainScreen} />
         <Stack.Screen name={Screens.App1} component={App1} />
         <Stack.Screen name={Screens.App2} component={App2} />
+        <Stack.Screen name={Screens.App3} component={App3} />
       </Stack.Navigator>
     </NavigationContainer>
   );

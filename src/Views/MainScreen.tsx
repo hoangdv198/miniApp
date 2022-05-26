@@ -15,7 +15,7 @@ const MainScreen: React.FC = () => {
   const listApp = [
     {name: 'Videos', screen: Screens.App1},
     {name: 'App2', screen: Screens.App2},
-    {name: 'App3', screen: Screens.App1},
+    {name: 'App3', screen: Screens.App3},
   ];
 
   const renderList = useCallback(
