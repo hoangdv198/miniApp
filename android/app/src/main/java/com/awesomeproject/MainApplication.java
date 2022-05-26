@@ -5,6 +5,8 @@ import expo.modules.ReactNativeHostWrapper;
 
 import android.app.Application;
 import android.content.Context;
+
+import com.awesomeproject.calendarcustom.MyCalendarPackage;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
@@ -13,6 +15,8 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.config.ReactFeatureFlags;
 import com.facebook.soloader.SoLoader;
 import com.awesomeproject.newarchitecture.MainApplicationReactNativeHost;
+
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
@@ -31,6 +35,8 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
+          packages.add(new MyCalendarPackage());
+          packages.add(new MyCustomViewPackage());
           return packages;
         }
 
