@@ -13,7 +13,7 @@ import {Screens} from '../ultis/types/Navigation';
 const MainScreen: React.FC = () => {
   const navigation = useNavigation();
   const listApp = [
-    {name: 'App1', screen: Screens.App1},
+    {name: 'Videos', screen: Screens.App1},
     {name: 'App2', screen: Screens.App2},
     {name: 'App3', screen: Screens.App1},
   ];
