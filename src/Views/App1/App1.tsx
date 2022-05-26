@@ -12,7 +12,7 @@ import {styleBase} from '../../assets/styles';
 
 import Video from 'react-native-video';
 import {IVideo, videos} from './data';
-import {height} from '../../ultis/constan';
+import {height, width} from '../../ultis/constan';
 
 const VIDEO_HEIGHT = height / 3.5;
 

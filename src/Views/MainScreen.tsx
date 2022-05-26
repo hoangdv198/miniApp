@@ -13,9 +13,10 @@ import {Screens} from '../ultis/types/Navigation';
 const MainScreen: React.FC = () => {
   const navigation = useNavigation();
   const listApp = [
-    {name: 'Videos', screen: Screens.App1},
+    {name: 'React Native Videos', screen: Screens.App1},
     {name: 'App2', screen: Screens.App2},
-    {name: 'App3', screen: Screens.App3},
+    {name: 'React Native Lightbox', screen: Screens.App3},
+    {name: 'Animation', screen: Screens.App4},
   ];
 
   const renderList = useCallback(
@@ -40,7 +41,7 @@ const MainScreen: React.FC = () => {
   );
 
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, paddingTop: 10}}>
       <FlatList data={listApp} renderItem={renderList} />
     </SafeAreaView>
   );
